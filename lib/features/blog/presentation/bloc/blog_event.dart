@@ -18,3 +18,5 @@ final class CreateBlog extends BlogEvent {
     required this.authorId,
   });
 }
+
+final class GetBlogsEvent extends BlogEvent {}
