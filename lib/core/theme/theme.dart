@@ -19,5 +19,9 @@ class AppTheme {
         borderRadius: BorderRadius.circular(10),
       ),
     ),
+    chipTheme: ChipThemeData(
+      color: WidgetStateProperty.all(AppPallete.backgroundColor),
+      side: BorderSide.none,
+    ),
   );
 }
