@@ -8,6 +8,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BlogPage extends StatefulWidget {
+  static route() {
+    return MaterialPageRoute(builder: (context) => const BlogPage());
+  }
+
   const BlogPage({super.key});
 
   @override
