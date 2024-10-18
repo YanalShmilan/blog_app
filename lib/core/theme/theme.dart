@@ -18,6 +18,14 @@ class AppTheme {
         borderSide: const BorderSide(color: AppPallete.gradient2, width: 3),
         borderRadius: BorderRadius.circular(10),
       ),
+      errorBorder: OutlineInputBorder(
+        borderSide: const BorderSide(color: AppPallete.errorColor, width: 3),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      focusedErrorBorder: OutlineInputBorder(
+        borderSide: const BorderSide(color: AppPallete.gradient2, width: 3),
+        borderRadius: BorderRadius.circular(10),
+      ),
     ),
     chipTheme: ChipThemeData(
       color: WidgetStateProperty.all(AppPallete.backgroundColor),
