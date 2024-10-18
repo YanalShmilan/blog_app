@@ -14,3 +14,9 @@ final class BlogError extends BlogState {
 
   BlogError({required this.message});
 }
+
+final class BlogsLoaded extends BlogState {
+  final List<Blog> blogs;
+
+  BlogsLoaded({required this.blogs});
+}

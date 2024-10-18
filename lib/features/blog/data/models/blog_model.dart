@@ -9,6 +9,7 @@ class BlogModel extends Blog {
     required super.imageUrl,
     required super.tags,
     required super.updatedAt,
+    super.posterEmail,
   });
 
   factory BlogModel.fromJson(Map<String, dynamic> json) {
@@ -20,6 +21,7 @@ class BlogModel extends Blog {
       imageUrl: json['image_url'],
       tags: List<String>.from(json['tags']),
       updatedAt: DateTime.parse(json['updated_at']),
+      posterEmail: json['profiles']?['name'],
     );
   }
 
